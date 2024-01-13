@@ -17,6 +17,9 @@ const { data: videoListDetails } = await useFetch(
   {
     headers: {
       Authorization: "XMhaWtZ57UdJSxa30eLsmgdAtdyOXEU5MeP1TVBWL4hp0dx4STeszUjX",
+      "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
     },
   }
 );

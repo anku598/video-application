@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { User } from "~/server/models/User";
 export default NuxtAuthHandler({
-  secret: useRuntimeConfig().authSecret,
+  secret: useRuntimeConfig().AUTH_SECRET,
   pages: {
     signIn: "/login",
   },
