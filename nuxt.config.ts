@@ -14,9 +14,13 @@ export default defineNuxtConfig({
   },
 
   auth: {
+    isEnabled: true,
     baseURL: process.env.AUTH_ORIGIN || "http://localhost:3000/",
     provider: {
       type: "authjs",
+    },
+    globalAppMiddleware: {
+      isEnabled: true,
     },
   },
 });
