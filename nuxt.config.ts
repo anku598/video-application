@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   },
 
   auth: {
-    baseURL: "https://audacity-task.netlify.app",
+    baseURL: process.env.AUTH_ORIGIN,
     provider: {
       type: "authjs",
     },
